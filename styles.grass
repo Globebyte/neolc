@@ -1,0 +1,224 @@
+node {
+  diameter: 80px;
+  color: #604A0E;
+  border-color: #423204;
+  border-width: 2px;
+  text-color-internal: #FFFFFF;
+  font-size: 10px;
+}
+relationship {
+  color: #A5ABB6;
+  shaft-width: 1px;
+  font-size: 8px;
+  padding: 3px;
+  text-color-external: #000000;
+  text-color-internal: #FFFFFF;
+  caption: "<type>";
+}
+node.Person {
+  color: #C990C0;
+  border-color: #b261a5;
+  text-color-internal: #FFFFFF;
+  defaultCaption: "<id>";
+  caption: "{name}";
+}
+node.Movie {
+  color: #F79767;
+  border-color: #f36924;
+  text-color-internal: #FFFFFF;
+  defaultCaption: "<id>";
+  caption: "{title}";
+}
+node.Verb {
+  color: #57C7E3;
+  border-color: #23b3d7;
+  text-color-internal: #2A2C34;
+  defaultCaption: "<id>";
+  caption: "{name}";
+}
+node.Cohort {
+  color: #F16667;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+  defaultCaption: "<id>";
+  caption: "{id}";
+}
+node.Group {
+  color: #D9C8AE;
+  border-color: #c0a378;
+  text-color-internal: #2A2C34;
+  defaultCaption: "<id>";
+  caption: "{name}";
+}
+node.Agent {
+  color: #8DCC93;
+  border-color: #5db665;
+  text-color-internal: #2A2C34;
+  defaultCaption: "<id>";
+  caption: "{name}";
+}
+node.Activity {
+  color: #ECB5C9;
+  border-color: #da7298;
+  text-color-internal: #2A2C34;
+  defaultCaption: "<id>";
+  caption: "{dateCreated}";
+}
+node.StatementActivity {
+  color: #4C8EDA;
+  border-color: #2870c2;
+  text-color-internal: #FFFFFF;
+  defaultCaption: "<id>";
+  caption: "{sequence}";
+}
+node.Statement {
+  color: #FFC454;
+  border-color: #d7a013;
+  text-color-internal: #2A2C34;
+  defaultCaption: "<id>";
+  caption: "{dateCreated}";
+}
+node.Tenant {
+  color: #DA7194;
+  border-color: #cc3c6c;
+  text-color-internal: #FFFFFF;
+  caption: "{tenantName}";
+}
+node.Store {
+  color: #569480;
+  border-color: #447666;
+  text-color-internal: #FFFFFF;
+  caption: "{storeName}";
+}
+node.StatementExtension {
+  caption: "{dateCreated}";
+}
+node.StatementSource {
+  caption: "{dateCreated}";
+}
+node.GroupAgent {
+  caption: "{dateCreated}";
+}
+node.ExtensionValue {
+  defaultCaption: "<id>";
+  caption: "{name}";
+}
+node.Context {
+  defaultCaption: "<id>";
+  caption: "{name}";
+}
+node.Attachment {
+  defaultCaption: "<id>";
+  caption: "{name}";
+}
+node.ConsumerStore {
+  defaultCaption: "<id>";
+  caption: "{name}";
+}
+node.StatementAttachment {
+  defaultCaption: "<id>";
+  caption: "{name}";
+}
+node.Consumer {
+  defaultCaption: "<id>";
+  caption: "{name}";
+}
+node.StatementLog {
+  defaultCaption: "<id>";
+  caption: "{name}";
+}
+node.User {
+  defaultCaption: "<id>";
+  caption: "{name}";
+  color: #569480;
+  border-color: #447666;
+  text-color-internal: #FFFFFF;
+}
+node.Experience {
+  defaultCaption: "<id>";
+  caption: "{pageName}";
+  color: #F16667;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+  diameter: 80px;
+}
+node.Page {
+  caption: "{name}";
+  color: #4C8EDA;
+  border-color: #2870c2;
+  text-color-internal: #FFFFFF;
+}
+node.Strategy {
+  caption: "{name}";
+  color: #FFC454;
+  border-color: #d7a013;
+  text-color-internal: #2A2C34;
+  diameter: 80px;
+}
+node.Course {
+  caption: "{name}";
+  color: #4C8EDA;
+  border-color: #2870c2;
+  text-color-internal: #FFFFFF;
+}
+node.Other {
+  defaultCaption: "<id>";
+  color: #F79767;
+  border-color: #f36924;
+  text-color-internal: #FFFFFF;
+  caption: "{verb}";
+}
+node.PageVisit {
+  defaultCaption: "<id>";
+  diameter: 80px;
+  color: #F16667;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+}
+node.Reaction {
+  defaultCaption: "<id>";
+  color: #4C8EDA;
+  border-color: #2870c2;
+  text-color-internal: #FFFFFF;
+  caption: "{msgType}";
+  diameter: 80px;
+}
+node.Response {
+  defaultCaption: "<id>";
+  color: #D9C8AE;
+  border-color: #c0a378;
+  text-color-internal: #2A2C34;
+  caption: "{verb}";
+}
+node.Attempted {
+  defaultCaption: "<id>";
+  color: #8DCC93;
+  border-color: #5db665;
+  text-color-internal: #2A2C34;
+  caption: "{verb}";
+  diameter: 80px;
+}
+node.Joined {
+  defaultCaption: "<id>";
+  color: #57C7E3;
+  border-color: #23b3d7;
+  text-color-internal: #2A2C34;
+  diameter: 80px;
+  caption: "{verb}";
+}
+relationship.THEN {
+  shaft-width: 2px;
+  caption: "<type>";
+  color: #604A0E;
+  border-color: #423204;
+  text-color-internal: #FFFFFF;
+}
+relationship.TRACKED_BY {
+  shaft-width: 1px;
+  color: #F16667;
+  border-color: #eb2728;
+  text-color-internal: #FFFFFF;
+}
+node.Start {
+  defaultCaption: "<id>";
+}
